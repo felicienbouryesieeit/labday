@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp2b25ochald7"]
+
+[ext_resource type="PackedScene" uid="uid://b431jbpqvdrux" path="res://gameobjects/characters/character.tscn" id="1_whfia"]
+[ext_resource type="Texture2D" uid="uid://cskv28jkumsio" path="res://Ninja Adventure - Asset Pack/Items/Scroll/ScrollRock.png" id="2_unaul"]
+
+[node name="game_scene" type="Node2D"]
+
+[node name="Character" parent="." instance=ExtResource("1_whfia")]
+position = Vector2(280, 414)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(200, 300)
+texture = ExtResource("2_unaul")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(413, 404)
+texture = ExtResource("2_unaul")
