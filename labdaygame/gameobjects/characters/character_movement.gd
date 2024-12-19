@@ -13,10 +13,14 @@ var animation_direction2 : int = 0
 var animation_frame : int = 0
 var animation_state_bool : bool = false
 
+
 func _ready() -> void:
 	timervar.start(0.15)  # Démarre le Timer pour 2 secondes
 	timervar.timeout.connect(animationframefunc)  # Connecte le signal timeout
 
+func _input(event):
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().change_scene_to_file("res://main_menu.tscn")
 
 func animationframefunc() -> void:
 	#print("Fonction appelée après 2 secondes")
