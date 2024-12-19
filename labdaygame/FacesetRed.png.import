@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df5g78ubmpreo"
-path="res://.godot/imported/image a la une (2).jpg-c7c932e36260b457e4f5022ed9b613a4.ctex"
+uid="uid://c15cevrrntwek"
+path="res://.godot/imported/FacesetRed.png-ab83b112379ad38dabac43fb9602e1df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image a la une (2).jpg"
-dest_files=["res://.godot/imported/image a la une (2).jpg-c7c932e36260b457e4f5022ed9b613a4.ctex"]
+source_file="res://FacesetRed.png"
+dest_files=["res://.godot/imported/FacesetRed.png-ab83b112379ad38dabac43fb9602e1df.ctex"]
 
 [params]
 
