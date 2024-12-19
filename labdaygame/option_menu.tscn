@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://dijkr4iyb33dj"]
 
 [ext_resource type="Script" path="res://option_menu.gd" id="1_73xgr"]
-[ext_resource type="Texture2D" uid="uid://df5g78ubmpreo" path="res://image a la une (2).jpg" id="2_lbtuq"]
+[ext_resource type="Texture2D" uid="uid://c15cevrrntwek" path="res://FacesetRed.png" id="2_wd6nm"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uabic"]
-texture = ExtResource("2_lbtuq")
-modulate_color = Color(0.176419, 0.176419, 0.176419, 1)
+texture = ExtResource("2_wd6nm")
+modulate_color = Color(0.266575, 0.266575, 0.266575, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bgbp1"]
 bg_color = Color(0.662745, 0.47451, 1, 1)
