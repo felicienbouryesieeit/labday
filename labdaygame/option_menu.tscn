@@ -1,25 +1,39 @@
-[gd_scene load_steps=7 format=3 uid="uid://dijkr4iyb33dj"]
+[gd_scene load_steps=9 format=3 uid="uid://dijkr4iyb33dj"]
 
 [ext_resource type="Script" path="res://option_menu.gd" id="1_73xgr"]
 [ext_resource type="Texture2D" uid="uid://c15cevrrntwek" path="res://FacesetRed.png" id="2_wd6nm"]
+[ext_resource type="FontFile" uid="uid://b8pt6pnbo3vyd" path="res://Ninja Adventure - Asset Pack/Ui/Font/NormalFont.ttf" id="3_b2vlw"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uabic"]
 texture = ExtResource("2_wd6nm")
 modulate_color = Color(0.266575, 0.266575, 0.266575, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bgbp1"]
-bg_color = Color(0.662745, 0.47451, 1, 1)
+bg_color = Color(0.313726, 0.403922, 0.309804, 1)
 corner_radius_top_left = 60
 corner_radius_top_right = 60
 corner_radius_bottom_right = 60
 corner_radius_bottom_left = 60
+shadow_color = Color(0.407843, 0.498039, 0.403922, 1)
+shadow_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xpaud"]
+bg_color = Color(0.309804, 0.4, 0.309804, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+shadow_color = Color(0.4, 0.490196, 0.4, 1)
+shadow_size = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aslpw"]
-bg_color = Color(0.662745, 0.47451, 1, 1)
+bg_color = Color(0.407843, 0.498039, 0.403922, 1)
 corner_radius_top_left = 60
 corner_radius_top_right = 60
 corner_radius_bottom_right = 60
 corner_radius_bottom_left = 60
+shadow_color = Color(0.407843, 0.498039, 0.403922, 1)
+shadow_size = 20
 
 [sub_resource type="GDScript" id="GDScript_xd2lw"]
 script/source = "extends Button
@@ -63,12 +77,25 @@ theme_override_constants/separation = 30
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_b2vlw")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_bgbp1")
 text = "Musique"
 
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_xpaud")
+item_count = 3
+popup/item_0/text = "vitesse 1"
+popup/item_0/id = 1
+popup/item_1/text = "vitesse 2"
+popup/item_1/id = 2
+popup/item_2/text = "vitesse 3"
+popup/item_2/id = 2
+
 [node name="Button4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_b2vlw")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_aslpw")
 text = "Retour"
